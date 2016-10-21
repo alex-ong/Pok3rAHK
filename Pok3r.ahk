@@ -40,6 +40,22 @@ Capslock & i up::Send {Blind}{Up Up}
 Capslock & l::Send {Blind}{Right DownTemp}
 Capslock & l up::Send {Blind}{Right Up}
 
+//==========================WASD Arrow Keys ==================================
+// Capslock + w (left, down, up, right)
+
+Capslock & a::Send {Blind}{Left DownTemp}
+Capslock & a up::Send {Blind}{Left Up}
+
+Capslock & s::Send {Blind}{Down DownTemp}
+Capslock & s up::Send {Blind}{Down Up}
+
+Capslock & w::Send {Blind}{Up DownTemp}
+Capslock & w up::Send {Blind}{Up Up}
+
+Capslock & d::Send {Blind}{Right DownTemp}
+Capslock & d up::Send {Blind}{Right Up}
+
+
 //======================= Navigation Keys ====================================
 // Capslock + uohy (pgdown, pgup, home, end)
 
