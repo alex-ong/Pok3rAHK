@@ -28,32 +28,32 @@ Capslock & Tab::SendInput {Blind}{Capslock}
 //==========================Arrow Keys =======================================
 // Capslock + jkli (left, down, up, right)
 
-Capslock & j::Send {Blind}{Left DownTemp}
-Capslock & j up::Send {Blind}{Left Up}
+Capslock & j::SendInput {Blind}{Left DownTemp}
+Capslock & j up::SendInput {Blind}{Left Up}
 
-Capslock & k::Send {Blind}{Down DownTemp}
-Capslock & k up::Send {Blind}{Down Up}
+Capslock & k::SendInput {Blind}{Down DownTemp}
+Capslock & k up::SendInput {Blind}{Down Up}
 
-Capslock & i::Send {Blind}{Up DownTemp}
-Capslock & i up::Send {Blind}{Up Up}
+Capslock & i::SendInput {Blind}{Up DownTemp}
+Capslock & i up::SendInput {Blind}{Up Up}
 
-Capslock & l::Send {Blind}{Right DownTemp}
-Capslock & l up::Send {Blind}{Right Up}
+Capslock & l::SendInput {Blind}{Right DownTemp}
+Capslock & l up::SendInput {Blind}{Right Up}
 
 //==========================WASD Arrow Keys ==================================
 // Capslock + w (left, down, up, right)
 
-Capslock & a::Send {Blind}{Left DownTemp}
-Capslock & a up::Send {Blind}{Left Up}
+Capslock & a::SendInput {Blind}{Left DownTemp}
+Capslock & a up::SendInput {Blind}{Left Up}
 
-Capslock & s::Send {Blind}{Down DownTemp}
-Capslock & s up::Send {Blind}{Down Up}
+Capslock & s::SendInput {Blind}{Down DownTemp}
+Capslock & s up::SendInput {Blind}{Down Up}
 
-Capslock & w::Send {Blind}{Up DownTemp}
-Capslock & w up::Send {Blind}{Up Up}
+Capslock & w::SendInput {Blind}{Up DownTemp}
+Capslock & w up::SendInput {Blind}{Up Up}
 
-Capslock & d::Send {Blind}{Right DownTemp}
-Capslock & d up::Send {Blind}{Right Up}
+Capslock & d::SendInput {Blind}{Right DownTemp}
+Capslock & d up::SendInput {Blind}{Right Up}
 
 
 //======================= Navigation Keys ====================================
