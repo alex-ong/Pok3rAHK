@@ -122,3 +122,8 @@ Capslock & ]:: SendInput {Blind}{Pause}
 Capslock & ;:: SendInput {Blind}{Insert}
 //Capslock & `':: SendInput {Blind}{Insert}
 
+//============================Custom media keys (not halal)==================
+//Volume up/down.
+Capslock & ,:: SendInput {Blind}{Volume_Up}
+Capslock & .:: SendInput {Blind}{Volume_Down}
+Capslock & /:: SendInput {Blind}{Volume_Mute}
