@@ -77,8 +77,7 @@ Capslock & o up::SendInput {Blind}{PgDn Up}
 `::SendInput {Blind}{Escape}
 ` up::SendInput {Blind}{Escape Up}
 
-//Hack fix for ctrl+shift+escape in windows.
-^+`::SendInput {Blind}{Ctrl}{Shift}{Escape}
+
 
 // Grave/Tilde. Note that ` symbol is an escape character
 Capslock & `:: SendInput {Blind}{`` Down} 
@@ -111,8 +110,13 @@ Capslock & =::SendInput {Blind}{F12 Down}
 Capslock & = up:: SendInput {Blind}{F12 Up}
 
 // Make Capslock & Backspace equivalent to delete
-Capslock & BS::SendInput {Del Down}
-Capslock & BS up::SendInput {Del Up}
+Capslock & BS::
+If GetKeyState("Ctrl", "p")
+  SendInput {Blind}{Ctrl}{Del}
+else
+  SendInput {Blind}{Del}
+
+
 
 //=============================Misc Keys=====================================
 //(PrtSc,Scrlk,Pause, Insert, Delete)
@@ -121,6 +125,11 @@ Capslock & [:: SendInput {Blind}{Scrolllock}
 Capslock & ]:: SendInput {Blind}{Pause}
 Capslock & ;:: SendInput {Blind}{Insert}
 //Capslock & `':: SendInput {Blind}{Insert}
+
+
+//=============================Hack Fixes====================================
+//Hack fix for ctrl+shift+escape in windows.
+^+`::SendInput {Blind}{Ctrl}{Shift}{Escape}
 
 //============================Custom media keys (not halal)==================
 //Volume up/down.
