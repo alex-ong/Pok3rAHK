@@ -104,8 +104,11 @@ Capslock & =::SendInput {Blind}{F12 Down}
 Capslock & = up:: SendInput {Blind}{F12 Up}
 
 // Make Capslock & Backspace equivalent to delete
-Capslock & BS::SendInput {Del Down}
-Capslock & BS up::SendInput {Del Up}
+Capslock & BS::
+If GetKeyState("Ctrl", "p")
+  SendInput {Blind}{Ctrl}{Del}
+else
+  SendInput {Blind}{Del}
 
 //=============================Misc Keys=====================================
 //(PrtSc,Scrlk,Pause, Insert, Delete)
