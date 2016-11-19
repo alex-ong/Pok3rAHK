@@ -118,6 +118,9 @@ Capslock & ;:: SendInput {Blind}{Insert}
 
 //============================Custom media keys (not halal)==================
 //Volume up/down.
-Capslock & ,:: SendInput {Blind}{Volume_Down}
-Capslock & .:: SendInput {Blind}{Volume_Up}
-Capslock & /:: SendInput {Blind}{Volume_Mute}
+Capslock & ,:: SendInput {Blind}{Volume_Down down}
+Capslock & , up:: SendInput {Blind}{Volume_Down up}
+Capslock & .:: SendInput {Blind}{Volume_Up down}
+Capslock & . up:: SendInput {Blind}{Volume_Up up}
+Capslock & /:: SendInput {Blind}{Volume_Mute down}
+Capslock & / up:: SendInput {Blind}{Volume_Mute up}
