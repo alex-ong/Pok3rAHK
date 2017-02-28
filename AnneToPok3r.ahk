@@ -109,6 +109,7 @@ If GetKeyState("Ctrl", "p")
   SendInput {Blind}{Ctrl}{Del}
 else
   SendInput {Blind}{Del}
+return
 
 //=============================Misc Keys=====================================
 //(PrtSc,Scrlk,Pause, Insert, Delete)
