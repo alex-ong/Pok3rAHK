@@ -1,6 +1,6 @@
 #CommentFlag //
 #InstallKeybdHook
-
+#SingleInstance Force
 // Author: Alex Ong
 // Description: Simulates my preferred keyboard layout, similiar to that of the Pok3r 60% keyboard
 // on any keyboard without programmable keys. i.e. my laptop ^^
