@@ -51,20 +51,29 @@ bindings['-'] = 'f11'
 bindings['='] = 'f12'
 
 -- Command keys idk
-bindings['p'] = 'printscreen'
-bindings['['] = 'scrolllock'
-bindings[']'] = 'pause'
-bindings[';'] = 'insert'
-bindings[','] = 'volume_down'
-bindings['.'] = 'volume_up'
-bindings['/'] = 'volume_mute'
+--bindings['p'] = 'printscreen'
+--bindings['['] = 'scrolllock'
+--bindings[']'] = 'pause'
+--bindings[';'] = 'insert'
+--bindings[','] = 'volume_down'
+--bindings['.'] = 'volume_up'
+--bindings['/'] = 'volume_mute'
 
-
+pushes = {}
+releases = {}
 for binding, key in pairs(bindings) do
-  print(binding, key)
+  -- print(binding, key)
+  push = hs.eventtap.event.newKeyEvent({}, key, true)
+  release = hs.eventtap.event.newKeyEvent({}, key, false)
+  pushes[binding] = push
+  releases[binding] = release
   hyper:bind({}, binding,
     function()
-      hs.eventtap.keyStroke({}, key)
+      -- hs.eventtap.keyStroke({}, key)
+      pushes[binding]:post()
+    end,
+    function()
+      releases[binidng]:post() --this doesnt work yet rip
     end
   )
 end
